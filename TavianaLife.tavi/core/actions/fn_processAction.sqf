@@ -33,6 +33,12 @@ _cost = _itemInfo select 2;
 _upp = _itemInfo select 3;
 //2vars
 if(_2var) then { _oldItem2 = _itemInfo select 5; }; //set Itemname if (processing with 2 Items = true)
+if _vendor  then {
+	_hasLicense = true;
+} else {
+	//_hasLicense = GVAR_MNS (([_type,0] call life_fnc_licenseType) select 0);
+	_hasLicense = LICENSE_VALUE(_type,"civ");
+};
 _itemName = M_CONFIG(getText,"VirtualItems",_newItem,"displayName");
 _oldVal = ITEM_VALUE(_oldItem);
 
