@@ -136,7 +136,7 @@ class WeaponShops {
 			{"Chemlight_red", "", 6500 }
         };
     };
-	*/
+	
 	class cops_weapons {
         name = "Armurerie de la Police";
         side = "cop";
