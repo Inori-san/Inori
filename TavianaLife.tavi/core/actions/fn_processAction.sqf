@@ -49,7 +49,7 @@ if(_2var) then { _oldItem2 = _itemInfo select 5; }; //set Itemname if (processin
 _itemName = M_CONFIG(getText,"VirtualItems",_newItem,"displayName");
 _oldVal = ITEM_VALUE(_oldItem);
 
-if(_2var) then { _oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle); };
+if(_2var) then { _oldVal2 = missionNamespace setVariable ([_oldItem2,0] call life_fnc_varHandle); };
 
 
 if(_2var) then { 
