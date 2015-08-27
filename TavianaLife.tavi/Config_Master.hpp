@@ -158,7 +158,7 @@ class VirtualItems {
 	VITEMMACRO(colora, "Colorant alimentaire", "colora", 1, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(cafeine, "Boite de Caféine", "cafeine", 1, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(tavico, "TaviaCola", "tavico", 3, -1, -1, false, 100, "") // Modif':27/08/2015
-	VITEMMACRO(money_false, "Faux billets", "money_false", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(money_fake, "Faux billets", "money_fake", 1, -1, -1, false, -1, "") // Modif':27/08/2015
 	
 	//Misc
 	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "\tavianalifefr_data\data\icons\pickaxe.paa")
