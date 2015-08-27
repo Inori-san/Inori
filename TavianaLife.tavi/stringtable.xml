@@ -3273,6 +3273,36 @@
 		</Key>
 	</Package>
 	<Package name="Life_License">
+		<Key ID="STR_License_packbase">
+			<Original>Pack Standart</Original>
+		</Key>
+		<Key ID="STR_License_packos">
+			<Original>Pack Old School</Original>
+		</Key>
+		<Key ID="STR_License_packsout">
+			<Original>Pack Soutient</Original>
+		</Key>
+		<Key ID="STR_License_packsnip">
+			<Original>Pack Tireur d'Elite</Original>
+		</Key>
+		<Key ID="STR_License_packclq">
+			<Original>Pack Close Quarter</Original>
+		</Key>
+		<Key ID="STR_License_packrpg">
+			<Original>Pack Lanceurs</Original>
+		</Key>
+		<Key ID="STR_License_packelite">
+			<Original>Pack Forces Spéciales</Original>
+		</Key>
+		<Key ID="STR_License_packexplo">
+			<Original>Pack Démolisseur</Original>
+		</Key>
+		<Key ID="STR_License_packmun">
+			<Original>Pack de Munitions</Original>
+		</Key>
+		<Key ID="STR_License_packacces">
+			<Original>Pack d'accessoires</Original>
+		</Key>
 		<Key ID="STR_License_Driver">
 			<Original>Driver License</Original>
 			<German>Führerschein</German>
