@@ -57,10 +57,8 @@ _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
 life_is_processing = true;
-if(_hasLicense) then
-{
-	while{true} do
-	{
+if(_hasLicense) then {
+	while{true} do {
 		sleep  0.3;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
