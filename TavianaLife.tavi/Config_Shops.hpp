@@ -5,7 +5,7 @@ class WeaponShops {
         side = "adac";
         license = "";
         level = -1;
-        msg = "";
+        msg = "Vous n'êtes pas militaire!";
         items[] = {
 				{"rhs_weap_ak74m", "", 0 },
 				{"rhs_30Rnd_545x39_AK", "Chargeur AK-74M Polymere", 0 },
@@ -28,7 +28,7 @@ class WeaponShops {
         side = "adac";
         license = "";
         level = -1;
-        msg = "";
+        msg = "Vous n'êtes pas militaire!";
         items[] = {
 				{"hlc_rifle_ak12", "", 0 },
 				{"hlc_30Rnd_545x39_B_AK", "Chargeur AK12", 0 },
@@ -54,7 +54,7 @@ class WeaponShops {
         side = "adac";
         license = "";
         level = -1;
-        msg = "";
+        msg = "Vous n'êtes pas militaire!";
         items[] = {
 				{"hlc_rifle_ak12", "", 0 },
 				{"hlc_rifle_aku12", "", 0 },
@@ -87,7 +87,7 @@ class WeaponShops {
         side = "adac";
         license = "";
         level = -1;
-        msg = "";
+        msg = "Vous n'êtes pas militaire!";
         items[] = {
 				{"Rangefinder", "", 0 },
 				{"Medikit", "", 0 },
@@ -117,7 +117,7 @@ class WeaponShops {
         side = "cop";
         license = "";
         level = -1;
-        msg = "";
+        msg = "Vous ne faites pas parti de la police!";
         items[] = {
             {"TRYK_Headset_NV", "Lunettes de vision nocturne", 0 },
 			{"Rangefinder", "Télémètre", 0 },
@@ -142,7 +142,7 @@ class WeaponShops {
         side = "cop";
         license = "";
         level = -1;
-        msg = "";
+        msg = "Vous ne faites pas parti de la police!";
         items[] = {
 				["RH_p226", "", 0 ],
 				["RH_15Rnd_9x19_SIG", "", 0 ],
