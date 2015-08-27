@@ -66,10 +66,9 @@ if(_hasLicense) then {
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {};
 	};
-
-	if(player distance _vendor > 10) exitWith {hint "Tu dois rester a 10 metres pour fabriquer."; 5 cutText ["","PLAIN"];
-	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;
-	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;
+	if(player distance _vendor > 10) exitWith {hint "Tu dois rester a 10 metres pour fabriquer."; 5 cutText ["","PLAIN"]};
+	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false};
+	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false};
 	5 cutText ["","PLAIN"];
 	titleText[format["Tu as fabriqué %1 %2",_oldVal,localize _itemName],"PLAIN"];
 	life_is_processing = false;
