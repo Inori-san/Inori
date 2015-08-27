@@ -4309,7 +4309,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Traiter l'alliage"",life_fnc_processAction,""fonte"",0,false,false,"""",' life_inv_ironUnrefined > 0 && life_inv_carbonebrute > 0 && !life_is_processing'];    this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""diamond"",0,false,false,"""",' !license_civ_diamond && playerSide == civilian '];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Traiter l'alliage"",life_fnc_processAction,""fonte"",0,false,false,"""",' life_inv_iron_Unrefined > 0 && life_inv_carbonebrute > 0 && !life_is_processing'];    this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""diamond"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""diamond"",0,false,false,"""",' !license_civ_diamond && playerSide == civilian '];";
 				};
 			};
 		};
