@@ -144,26 +144,26 @@ class WeaponShops {
         level = -1;
         msg = "Vous ne faites pas parti de la police!";
         items[] = {
-				["RH_p226", "", 0 ],
-				["RH_15Rnd_9x19_SIG", "", 0 ],
-				["RH_X300", "", 0 ],
-				["hlc_smg_mp5a4", "", 0 ],
-				["hlc_30Rnd_9x19_GD_MP5", "", 0 ],
-				["RH_SFM952V", "Lampe torche", 0 ],
-				["RH_compm4s", "AimPoint CompM4", 0 ],
-				["RH_barska_rds", "Viseur CircleDot", 0 ],
-				["optic_Hamr", "", 0 ],
-				["hlc_rifle_g3ka4", "", 0, { "life_coplevel", 3 } ],
-				["hlc_20rnd_762x51_b_G3", "", 0, { "life_coplevel", 3 } ],
-				["RH_compM2l", "AimPoint CompM2", 0, { "life_coplevel", 3 } ],
-				["RH_HBLM", "", 0, { "life_coplevel", 3 } ],
-				["optic_MRCO", "", 0, { "life_coplevel", 3 } ],
-				["hlc_rifle_auga3_b", "", 0, { "life_coplevel", 5 } ],
-				["hlc_30Rnd_556x45_B_AUG", "", 0, { "life_coplevel", 5 } ],
-				["RH_Deagles", "", 0, { "life_coplevel", 5 } ],
-				["RH_7Rnd_50_AE", "", 0, { "life_coplevel", 5 } ],
-				["RH_bull", "", 0, { "life_coplevel", 8 } ],
-				["RH_6Rnd_454_Mag", "", 0, { "life_coplevel", 8 } ]
+				{"RH_p226", "", 0 },
+				{"RH_15Rnd_9x19_SIG", "", 0 },
+				{"RH_X300", "", 0 },
+				{"hlc_smg_mp5a4", "", 0 },
+				{"hlc_30Rnd_9x19_GD_MP5", "", 0 },
+				{"RH_SFM952V", "Lampe torche", 0 },
+				{"RH_compm4s", "AimPoint CompM4", 0 },
+				{"RH_barska_rds", "Viseur CircleDot", 0 },
+				{"optic_Hamr", "", 0 },
+				{"hlc_rifle_g3ka4", "", 0, { "life_coplevel", 3 } },
+				{"hlc_20rnd_762x51_b_G3", "", 0, { "life_coplevel", 3 } },
+				{"RH_compM2l", "AimPoint CompM2", 0, { "life_coplevel", 3 } },
+				{"RH_HBLM", "", 0, { "life_coplevel", 3 } },
+				{"optic_MRCO", "", 0, { "life_coplevel", 3 } },
+				{"hlc_rifle_auga3_b", "", 0, { "life_coplevel", 5 } },
+				{"hlc_30Rnd_556x45_B_AUG", "", 0, { "life_coplevel", 5 } },
+				{"RH_Deagles", "", 0, { "life_coplevel", 5 } },
+				{"RH_7Rnd_50_AE", "", 0, { "life_coplevel", 5 } },
+				{"RH_bull", "", 0, { "life_coplevel", 8 } },
+				{"RH_6Rnd_454_Mag", "", 0, { "life_coplevel", 8 } }
 		};
 	};
 	/*
