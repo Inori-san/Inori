@@ -21,6 +21,8 @@ _itemInfo = switch (_type) do
 	case "sand": {["sand","glass",50,"Traîtement du sable",false]};
 	case "salt": {["salt","saltr",50,"Raffinage du Sel",false]};
 	case "coke": {["coke","cokep",250,"Fabrication de cocaïne",false]};
+	case "fonte": {["carbonebrute","fontebrute",1000,"Traitement de l'alliage",true,"iron_unrefined"];}; // Modif':05/08/2015
+	case "carbone": {["charbonore","carbonebrute",1000,"Traitement du minerai",false];}; // Modif':05/08/2015
 	default {[]};
 };
 if(count _itemInfo == 0) exitWith {};
