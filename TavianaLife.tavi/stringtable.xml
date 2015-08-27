@@ -3706,6 +3706,9 @@
 		</Key>
 	</Package>
 		<Package name="Process_Action">
+		<Key ID="STR_Process_fonte">
+			<Original>Traitement de l'alliage</Original>
+		</Key>
 		<Key ID="STR_Process_Oil">
 			<Original>Processing Oil</Original>
 			<German>Öl wird verarbeite</German>
