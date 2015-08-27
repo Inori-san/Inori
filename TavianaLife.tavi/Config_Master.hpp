@@ -119,13 +119,46 @@ class Life_Settings {
 //Virtual Items
 class VirtualItems {
 	//Ajout tavianalife
-	VITEMMACRO(charbonore, "Charbon brute", "charbonore", 5, 750, 350, false, -1, "") // Modif':05/08/2015
-	VITEMMACRO(carbonebrute, "Carbone brute", "carbonebrute", 4, 750, 350, false, -1, "") // Modif':05/08/2015
+	VITEMMACRO(charbonore, "Charbon brute", "charbonore", 3, -1, -1, false, -1, "") // Modif':05/08/2015
+	VITEMMACRO(carbonebrute, "Carbone brute", "carbonebrute", 4, -1, -1, false, -1, "") // Modif':05/08/2015
 	VITEMMACRO(fontebrute, "Fonte", "fontebrute", 8, 750, 350, false, -1, "") // Modif':05/08/2015
-	VITEMMACRO(boisBuche, "Bûche de bois", "boisBuche", 4, 0, 0, false, -1, "") // Modif':27/08/2015
-	VITEMMACRO(paper, "Feuille de papier", "paper", 1, 0, 0, false, -1, "") // Modif':27/08/2015
-	VITEMMACRO(paper, "Feuille de papier", "paper", 1, 0, 0, false, -1, "") // Modif':27/08/2015
-	VITEMMACRO(paper, "Feuille de papier", "paper", 1, 0, 0, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(boisBuche, "Bûche de bois", "boisBuche", 4, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(charbonlog, "Charbon de bois", "charbonlog", 2, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(iron_unrefined, "STR_Item_IronOre", "ironUnrefined", 5, -1, -1, false, -1, "\tavianalifefr_data\data\icons\iron_ore.paa")
+	VITEMMACRO(iron_refined, "STR_Item_IronIngot", "ironRefined", 3, -1, 3200, false, -1, "\tavianalifefr_data\data\icons\iron.paa")
+	VITEMMACRO(plaque_fonte, "Plaque de fonte", "plaque_fonte", 4, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(etain_unrefined, "Minerais d'étain", "etain_unrefined", 3, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(etain_refined, "Lingot d'étain", "etain_refined", 4, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(copper_unrefined, "STR_Item_CopperOre", "copperUnrefined", 4, -1, -1, false, -1, "\tavianalifefr_data\data\icons\copper_ore.paa")
+	VITEMMACRO(copper_refined, "STR_Item_CopperIngot", "copperRefined", 3, -1, 1500, false, -1, "\tavianalifefr_data\data\icons\copper.paa")
+	VITEMMACRO(acier_refined, "Barre d'acier", "acier_refined", 5, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(bronze_refined, "Barre de bronze", "bronze_refined", 5, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(caviar, "Caviar", "caviarr", 3, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(cocaine_unprocessed, "STR_Item_CocaineU", "cocaineUnprocessed", 6, -1, 3000, true, -1, "\tavianalifefr_data\data\icons\cocain_unprocessed.paa")
+	VITEMMACRO(cocaine_processed, "STR_Item_CocaineP", "cocaineProcessed", 4, -1, 5000, true, -1, "\tavianalifefr_data\data\icons\cocain_processed.paa")
+	VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 4, -1, -1, true, -1, "\tavianalifefr_data\data\icons\cannabis.paa")
+	VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 3, 2800, 2350, true, -1, "\tavianalifefr_data\data\icons\marijuana.paa")
+	VITEMMACRO(vodka_cana, "Bouteille de Vodka Cannabis", "vodka_cana", 3, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(vodka, "Bouteille de Vodka", "vodka", 3, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(ble, "Blé", "ble", 2, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(farine, "Farine", "farine", 2, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(patate, "Pomme de terre", "patate", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(seigle, "Seigle", "seigle", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(betterave, "Betterave rouge", "betterave", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(mout_ferm, "Moût fermenté", "mout_ferm", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(distillat, "Distillat", "distillat", 2, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(salt_unrefined, "STR_Item_Salt", "saltUnrefined", 3, -1, -1, false, -1, "\tavianalifefr_data\data\icons\salt_unprocessed.paa")
+	VITEMMACRO(salt_refined, "STR_Item_SaltR", "saltRefined", 1, -1, 1450, false, -1, "\tavianalifefr_data\data\icons\salt.paa")
+	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 6, -1, -1, false, -1, "\tavianalifefr_data\data\icons\oil_unprocessed.paa")
+	VITEMMACRO(oil_processed, "STR_Item_OilP", "oilProcessed", 5, -1, 3200, false, -1, "\tavianalifefr_data\data\icons\oil_processed.paa")
+	VITEMMACRO(pvc_refined, "Tuyau de PVC", "pvc_refined", 5, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(caoutch, "Caoutchouc", "caoutch", 4, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(water_gaz, "Eau gazeuze", "water_gaz", 1, -1, -1, false, 70, "") // Modif':27/08/2015
+	VITEMMACRO(sugar, "Sucre", "sugar", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(colora, "Colorant alimentaire", "colora", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(cafeine, "Boite de Caféine", "cafeine", 1, -1, -1, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(tavico, "TaviaCola", "tavico", 3, -1, -1, false, 100, "") // Modif':27/08/2015
+	VITEMMACRO(money_false, "Faux billets", "money_false", 1, -1, -1, false, -1, "") // Modif':27/08/2015
 	
 	//Misc
 	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "\tavianalifefr_data\data\icons\pickaxe.paa")
@@ -141,14 +174,6 @@ class VirtualItems {
 	VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 150000, -1, false, -1, "\tavianalifefr_data\data\icons\storageBig.paa")
 
 	//Mined Items
-	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 7, -1, -1, false, -1, "\tavianalifefr_data\data\icons\oil_unprocessed.paa")
-	VITEMMACRO(oil_processed, "STR_Item_OilP", "oilProcessed", 6, -1, 3200, false, -1, "\tavianalifefr_data\data\icons\oil_processed.paa")
-	VITEMMACRO(copper_unrefined, "STR_Item_CopperOre", "copperUnrefined", 4, -1, -1, false, -1, "\tavianalifefr_data\data\icons\copper_ore.paa")
-	VITEMMACRO(copper_refined, "STR_Item_CopperIngot", "copperRefined", 3, -1, 1500, false, -1, "\tavianalifefr_data\data\icons\copper.paa")
-	VITEMMACRO(iron_unrefined, "STR_Item_IronOre", "ironUnrefined", 5, -1, -1, false, -1, "\tavianalifefr_data\data\icons\iron_ore.paa")
-	VITEMMACRO(iron_refined, "STR_Item_IronIngot", "ironRefined", 3, -1, 3200, false, -1, "\tavianalifefr_data\data\icons\iron.paa")
-	VITEMMACRO(salt_unrefined, "STR_Item_Salt", "saltUnrefined", 3, -1, -1, false, -1, "\tavianalifefr_data\data\icons\salt_unprocessed.paa")
-	VITEMMACRO(salt_refined, "STR_Item_SaltR", "saltRefined", 1, -1, 1450, false, -1, "\tavianalifefr_data\data\icons\salt.paa")
 	VITEMMACRO(sand, "STR_Item_Sand", "sand", 3, -1, -1, false, -1, "\tavianalifefr_data\data\icons\sand.paa")
 	VITEMMACRO(glass, "STR_Item_Glass", "glass", 1, -1, 1450, false, -1, "\tavianalifefr_data\data\icons\glass.paa")
 	VITEMMACRO(diamond_uncut, "STR_Item_DiamondU", "diamondUncut", 4, -1, 750, false, -1, "\tavianalifefr_data\data\icons\diamond_unprocessed.paa")
@@ -159,10 +184,6 @@ class VirtualItems {
 	//Drugs
 	VITEMMACRO(heroin_unprocessed, "STR_Item_HeroinU", "heroinUnprocessed", 6, -1, -1, true, -1, "\tavianalifefr_data\data\icons\heroin_unprocessed.paa")
 	VITEMMACRO(heroin_processed, "STR_Item_HeroinP", "heroinProcessed", 4, -1, 2560, true, -1, "\tavianalifefr_data\data\icons\heroin_processed.paa")
-	VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 4, -1, -1, true, -1, "\tavianalifefr_data\data\icons\cannabis.paa")
-	VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 3, 2800, 2350, true, -1, "\tavianalifefr_data\data\icons\marijuana.paa")
-	VITEMMACRO(cocaine_unprocessed, "STR_Item_CocaineU", "cocaineUnprocessed", 6, -1, 3000, true, -1, "\tavianalifefr_data\data\icons\cocain_unprocessed.paa")
-	VITEMMACRO(cocaine_processed, "STR_Item_CocaineP", "cocaineProcessed", 4, -1, 5000, true, -1, "\tavianalifefr_data\data\icons\cocain_processed.paa")
 
 	//Drink
 	VITEMMACRO(redgull, "STR_Item_RedGull", "redgull", 1, 1500, 200, false, 100, "\tavianalifefr_data\data\icons\redgull.paa")
