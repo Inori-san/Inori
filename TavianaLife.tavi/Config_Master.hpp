@@ -148,9 +148,9 @@ class VirtualItems {
 	VITEMMACRO(mout_ferm, "Moût fermenté", "mout_ferm", 1, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(distillat, "Distillat", "distillat", 2, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(salt_unrefined, "STR_Item_Salt", "saltUnrefined", 3, -1, -1, false, -1, "\tavianalifefr_data\data\icons\salt_unprocessed.paa")
-	VITEMMACRO(salt_refined, "STR_Item_SaltR", "saltRefined", 1, -1, 1450, false, -1, "\tavianalifefr_data\data\icons\salt.paa")
+	VITEMMACRO(salt_refined, "STR_Item_SaltR", "saltRefined", 1, -1, -1, false, -1, "\tavianalifefr_data\data\icons\salt.paa")
 	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 6, -1, -1, false, -1, "\tavianalifefr_data\data\icons\oil_unprocessed.paa")
-	VITEMMACRO(oil_processed, "STR_Item_OilP", "oilProcessed", 5, -1, 3200, false, -1, "\tavianalifefr_data\data\icons\oil_processed.paa")
+	VITEMMACRO(gaz_oil, "Bidon de gazoil", "gaz_oil", 5, -1, -1, false, -1, "\tavianalifefr_data\data\icons\oil_processed.paa")
 	VITEMMACRO(pvc_refined, "Tuyau de PVC", "pvc_refined", 5, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(caoutch, "Caoutchouc", "caoutch", 4, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(water_gaz, "Eau gazeuze", "water_gaz", 1, -1, -1, false, 70, "") // Modif':27/08/2015
