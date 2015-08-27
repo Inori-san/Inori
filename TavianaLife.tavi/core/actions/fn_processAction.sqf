@@ -24,8 +24,8 @@ _itemInfo = switch (_type) do {
 	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,(localize "STR_Process_Cocaine")];};
 	case "marijuana": {["cannabis","marijuana",500,(localize "STR_Process_Marijuana")];};
 	case "cement": {["rock","cement",350,(localize "STR_Process_Cement")];};
-	case "fonte": {["carbonebrute","fontebrute",1000,"Traitement de l'alliage"];}; // Modif':05/08/2015
-	case "carbone": {["charbonore","carbonebrute",1000,"Traitement du minerai"];}; // Modif':05/08/2015
+	case "fonte": {["carbonebrute","fontebrute",1000,(localize "STR_Process_fonte")];}; // Modif':05/08/2015
+	//case "carbone": {["charbonore","carbonebrute",1000,"Traitement du minerai"];}; // Modif':05/08/2015
 	default {[];};
 };
 
