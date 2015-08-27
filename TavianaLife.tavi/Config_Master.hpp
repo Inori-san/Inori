@@ -119,8 +119,8 @@ class Life_Settings {
 //Virtual Items
 class VirtualItems {
 	//Ajout tavianalife
-	VITEMMACRO(charbonore, "Charbon brute", "charbonore", 3, -1, -1, false, -1, "") // Modif':05/08/2015
-	VITEMMACRO(carbonebrute, "Carbone brute", "carbonebrute", 4, -1, -1, false, -1, "") // Modif':05/08/2015
+	VITEMMACRO(charbonore, "STR_Item_charbonore", "charbonore", 3, -1, -1, false, -1, "") // Modif':05/08/2015
+	VITEMMACRO(carbonebrute, "STR_Item_carbonebrute", "carbonebrute", 4, -1, -1, false, -1, "") // Modif':05/08/2015
 	VITEMMACRO(fontebrute, "Fonte", "fontebrute", 8, 750, 350, false, -1, "") // Modif':05/08/2015
 	VITEMMACRO(paper, "Papier", "paper", 1, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(boisBuche, "Bûche de bois", "boisBuche", 4, -1, -1, false, -1, "") // Modif':27/08/2015
