@@ -136,8 +136,8 @@ class VirtualItems {
 	VITEMMACRO(caviar, "Caviar", "caviarr", 3, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(cocaine_unprocessed, "STR_Item_CocaineU", "cocaineUnprocessed", 6, -1, 3000, true, -1, "\tavianalifefr_data\data\icons\cocain_unprocessed.paa")
 	VITEMMACRO(cocaine_processed, "STR_Item_CocaineP", "cocaineProcessed", 4, -1, 5000, true, -1, "\tavianalifefr_data\data\icons\cocain_processed.paa")
-	VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 4, -1, -1, true, -1, "\tavianalifefr_data\data\icons\cannabis.paa")
-	VITEMMACRO(marijuana, "STR_Item_Marijuana", "marijuana", 3, 2800, 2350, true, -1, "\tavianalifefr_data\data\icons\marijuana.paa")
+	VITEMMACRO(chanvre, "Chanvre", "Chanvre", 4, -1, -1, true, -1, "")
+	VITEMMACRO(cannabis, "STR_Item_Cannabis", "cannabis", 3, 2800, 2350, true, -1, "\tavianalifefr_data\data\icons\cannabis.paa)
 	VITEMMACRO(vodka_cana, "Bouteille de Vodka Cannabis", "vodka_cana", 3, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(vodka, "Bouteille de Vodka", "vodka", 3, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(ble, "Blé", "ble", 2, -1, -1, false, -1, "") // Modif':27/08/2015
