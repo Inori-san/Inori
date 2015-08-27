@@ -122,6 +122,7 @@ class VirtualItems {
 	VITEMMACRO(charbonore, "Charbon brute", "charbonore", 3, -1, -1, false, -1, "") // Modif':05/08/2015
 	VITEMMACRO(carbonebrute, "Carbone brute", "carbonebrute", 4, -1, -1, false, -1, "") // Modif':05/08/2015
 	VITEMMACRO(fontebrute, "Fonte", "fontebrute", 8, 750, 350, false, -1, "") // Modif':05/08/2015
+	VITEMMACRO(paper, "Papier", "paper", 1, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(boisBuche, "Bûche de bois", "boisBuche", 4, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(charbonlog, "Charbon de bois", "charbonlog", 2, -1, -1, false, -1, "") // Modif':27/08/2015
 	VITEMMACRO(iron_unrefined, "STR_Item_IronOre", "ironUnrefined", 5, -1, -1, false, -1, "\tavianalifefr_data\data\icons\iron_ore.paa")
