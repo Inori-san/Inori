@@ -122,6 +122,10 @@ class VirtualItems {
 	VITEMMACRO(charbonore, "Charbon brute", "charbonore", 5, 750, 350, false, -1, "") // Modif':05/08/2015
 	VITEMMACRO(carbonebrute, "Carbone brute", "carbonebrute", 4, 750, 350, false, -1, "") // Modif':05/08/2015
 	VITEMMACRO(fontebrute, "Fonte", "fontebrute", 8, 750, 350, false, -1, "") // Modif':05/08/2015
+	VITEMMACRO(boisBuche, "Bûche de bois", "boisBuche", 4, 0, 0, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(paper, "Feuille de papier", "paper", 1, 0, 0, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(paper, "Feuille de papier", "paper", 1, 0, 0, false, -1, "") // Modif':27/08/2015
+	VITEMMACRO(paper, "Feuille de papier", "paper", 1, 0, 0, false, -1, "") // Modif':27/08/2015
 	
 	//Misc
 	VITEMMACRO(pickaxe, "STR_Item_Pickaxe", "pickaxe", 2, 750, 350, false, -1, "\tavianalifefr_data\data\icons\pickaxe.paa")
