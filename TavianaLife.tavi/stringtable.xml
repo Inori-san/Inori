@@ -3279,6 +3279,12 @@
 		</Key>
 	</Package>
 	<Package name="Life_License">
+		<Key ID="STR_License_fonte">
+			<Original>License de Fonte</Original>
+		</Key>
+		<Key ID="STR_License_carbone">
+			<Original>License de Carbone</Original>
+		</Key>
 		<Key ID="STR_License_packbase">
 			<Original>Pack Standart</Original>
 		</Key>
