@@ -2,7 +2,7 @@ class WeaponShops {
 	//Army Shops
 	class army_weap_land {
         name = "Armement militaire";
-        side = "cop";
+        side = "adac";
         license = "";
         level = -1;
         msg = "";
@@ -25,7 +25,7 @@ class WeaponShops {
 	
 	class army_weap_air {
         name = "Armement militaire";
-        side = "cop";
+        side = "adac";
         license = "";
         level = -1;
         msg = "";
@@ -51,7 +51,7 @@ class WeaponShops {
 	
 	class army_weap_water {
         name = "Armement militaire";
-        side = "cop";
+        side = "adac";
         license = "";
         level = -1;
         msg = "";
@@ -84,7 +84,7 @@ class WeaponShops {
 	
 	class army_weap_gen {
         name = "Equipement militaire";
-        side = "cop";
+        side = "adac";
         license = "";
         level = -1;
         msg = "";
