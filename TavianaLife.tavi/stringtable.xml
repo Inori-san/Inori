@@ -2795,6 +2795,12 @@
 		</Key>
 	</Package>
 	<Package name="Life_Items">
+		<Key ID="STR_Item_charbonore">
+			<Original>Charbon brute</Original>
+		</Key>
+		<Key ID="STR_Item_carbonebrute">
+			<Original>Carbone brute</Original>
+		</Key>
 		<Key ID="STR_Item_Cannabis">
 			<Original>Cannabis</Original>
 			<German>Kannabis</German>
