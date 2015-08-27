@@ -230,8 +230,8 @@ class VirtualItems {
 	CLASS ENTRY,DisplayName,VariableName,price,illegal,side indicator
 */
 class Licenses {
-	LICENSEMACRO(fonte,"License de fonte","fonte",12000,false,"civ") // Modif':05/08/2015
-	LICENSEMACRO(carbone,"License de Carbone","carbone",8000,false,"civ") // Modif':05/08/2015
+	LICENSEMACRO(fonte,"STR_License_fonte","fonte",12000,false,"civ") // Modif':05/08/2015
+	LICENSEMACRO(carbone,"STR_License_carbone","carbone",8000,false,"civ") // Modif':05/08/2015
 	LICENSEMACRO(driver,"STR_License_Driver","driver",500,false,"civ")
 	LICENSEMACRO(boat,"STR_License_Boat","boat",1000,false,"civ")
 	LICENSEMACRO(pilot,"STR_License_Pilot","pilot",25000,false,"civ")
