@@ -6,77 +6,59 @@
 	Description:
 	Master handling for processing an item.
 */
-private["_oldVal2","_oldItem2","_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_olditem2","_oldVal2"];
+private["_vendor","_type","_itemInfo","_oldItem","_oldItem2","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_oldVal2","_ui","_progress","_pgText","_cP","_error"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
-//Error check
-if(isNull _vendor OR EQUAL(_type,"") OR (player distance _vendor > 10)) exitWith {};
-
-//unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
-_itemInfo = switch (_type) do {
-	case "oil": {["oilu","oilp",1200,(localize "STR_Process_Oil"),false];};
-	case "diamond": {["diamond_uncut","diamond_cut",1350,(localize "STR_Process_Diamond"),false];};
-	case "heroin": {["heroin_unprocessed","heroin_processed",1750,(localize "STR_Process_Heroin"),false];};
-	case "copper": {["copper_unrefined","copper_refined",750,(localize "STR_Process_Copper"),false];};
-	case "iron": {["iron_unrefined","iron_refined",1120,(localize "STR_Process_Iron"),false];};
-	case "sand": {["sand","glass",650,(localize "STR_Process_Sand"),false];};
-	case "salt": {["salt_unrefined","salt_refined",450,(localize "STR_Process_Salt"),false];};
-	case "cocaine": {["cocaine_unprocessed","cocaine_processed",1500,(localize "STR_Process_Cocaine"),false];};
-	case "marijuana": {["cannabis","marijuana",500,(localize "STR_Process_Marijuana"),false];};
-	case "cement": {["rock","cement",350,(localize "STR_Process_Cement"),false];};
-	case "fonte": {["carbonebrute","fontebrute",1000,"Traitement de l'alliage",true,"iron_unrefined"];}; // Modif':05/08/2015
-	case "carbone": {["charbonore","carbonebrute",1000,"Traitement du minerai",false];}; // Modif':05/08/2015
-	default {[];};
+if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
+_error = false;
+_itemInfo = switch (_type) do
+{
+	case "oil": {["oilu","oilp",100,"Raffinage du pétrole",false];};
+	case "diamond": {["diamond","diamondr",150,"Purification des diamants",false]};
+	case "heroin": {["heroinu","heroinp",200,"Fabrication d'héroïne",false]};
+	case "copper": {["copperore","copperr",50,"Fonte du cuivre",false]};
+	case "iron": {["ironore","ironr",50,"Fonte du fer",false]};
+	case "sand": {["sand","glass",50,"Traîtement du sable",false]};
+	case "salt": {["salt","saltr",50,"Raffinage du Sel",false]};
+	case "coke": {["coke","cokep",250,"Fabrication de cocaïne",false]};
+	default {[]};
 };
-
-//Error checking
-if(EQUAL(count _itemInfo,0)) exitWith {};
-
-//Setup vars.
+if(count _itemInfo == 0) exitWith {};
 _2var = _itemInfo select 4;  // true if process action is with 2 Items and false if processing with 1 Item.
-_oldItem = SEL(_itemInfo,0);
-_newItem = SEL(_itemInfo,1);
-_cost = SEL(_itemInfo,2);
-_upp = SEL(_itemInfo,3);
-
-if(_vendor in [mari_processor,coke_processor,heroin_processor]) then {
-	_hasLicense = true;
-} else {
-	_hasLicense = LICENSE_VALUE(_type,"civ");
-};
-
+_oldItem = _itemInfo select 0;
+_newItem = _itemInfo select 1;
+_cost = _itemInfo select 2;
+_upp = _itemInfo select 3;
+//2vars
 if(_2var) then { _oldItem2 = _itemInfo select 5; }; //set Itemname if (processing with 2 Items = true)
 _itemName = M_CONFIG(getText,"VirtualItems",_newItem,"displayName");
 _oldVal = ITEM_VALUE(_oldItem);
 
-if(_2var) then { _oldVal2 = missionNamespace setVariable ([_oldItem2,0] call life_fnc_varHandle); };
-
-
+//2vars
 if(_2var) then { 
+_oldVal2 = ITEM_VALUE(_oldItem2);
+};
+if(_2var) then {
        if(_oldVal !=_oldVal2) then {
               _error = true;
        };
 };
-if(_error) exitWith{hint "Tu n'as pas les ingrédients nécessaires"};
-
+if(_error) exitWith{hint "Tu dois avoir le meme nombre de produits pour traiter"};
 _cost = _cost * _oldVal;
-//Some more checks
-if(EQUAL(_oldVal,0)) exitWith {};
-
-//Setup our progress bar.
+if(_oldVal == 0) exitWith {};
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
-_ui = GVAR_UINS "life_progress";
+_ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
 _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
-
 life_is_processing = true;
-
-if(_hasLicense) then {
-	while{true} do {
+if(_hasLicense) then
+{
+	while{true} do
+	{
 		sleep  0.3;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
@@ -84,24 +66,20 @@ if(_hasLicense) then {
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {};
 	};
-	
-	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 
-//2vars
-if(_2var) then 
-{
-([false,_oldItem2,_oldVal2] call life_fnc_handleInv); //delete the second items (for example Iron)
-};
-
-	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
+	if(player distance _vendor > 10) exitWith {hint "Tu dois rester a 10 metres pour fabriquer."; 5 cutText ["","PLAIN"];
+	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;
+	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;
 	5 cutText ["","PLAIN"];
-	titleText[format[localize "STR_Process_Processed",_oldVal,localize _itemName],"PLAIN"];
+	titleText[format["Tu as fabriqué %1 %2",_oldVal,localize _itemName],"PLAIN"];
 	life_is_processing = false;
-} else {
-	if(CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	
-	while{true} do {
+}
+	else
+{
+	if(CASH < _cost) exitWith {hint format["Tu as besoin de %1€ pour fabriquer sans licence !",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
+
+	while{true} do
+	{
 		sleep  0.9;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
@@ -109,20 +87,19 @@ if(_2var) then
 		if(_cP >= 1) exitWith {};
 		if(player distance _vendor > 10) exitWith {};
 	};
-	
-	if(player distance _vendor > 10) exitWith {hint localize "STR_Process_Stay"; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(CASH < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	
+
+	if(player distance _vendor > 10) exitWith {hint "Tu dois rester a 10 metres pour fabriquer."; 5 cutText ["","PLAIN"]; life_is_processing = false;
+	if(CASH < _cost) exitWith {hint format["Tu as besoin de %1€ pour fabriquer sans license !",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;
 //2vars
-if(_2var) then 
-{
-([false,_oldItem2,_oldVal2] call life_fnc_handleInv); //delete the second items (for example Iron)
-};
-	
-	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
-	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
+	if(_2var) then
+	{
+	([false,_oldItem2,_oldVal2] call life_fnc_handleInv); //delete the second items (for example Iron)
+	};
+
+	if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;
+	if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;
 	5 cutText ["","PLAIN"];
-	titleText[format[localize "STR_Process_Processed2",_oldVal,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
-	SUB(CASH,_cost);
+	titleText[format["Tu as fabriqué %1 en %2 pour la somme de %3€",_oldVal,localize _itemName,[_cost] call life_fnc_numberText],"PLAIN"];
+	CASH = CASH - _cost;
 	life_is_processing = false;
-};	
+};
