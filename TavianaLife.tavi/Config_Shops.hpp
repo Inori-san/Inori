@@ -285,7 +285,7 @@ class WeaponShops {
             {"rhs_acc_ekp1", "", 30000 },
             {"HLC_Optic_1p29", "", 30000 },
             {"optic_mas_DMS", "", 30000 },
-            {"optic_mas_term", "", 30000 },
+            {"optic_mas_term", "", 30000 }
             };
     };
 	
