@@ -50,6 +50,7 @@ class Life_Client_Core
 	{
 		file = "core\adac";
 		class adacLoadout {};
+		class adacVInteractionMenu {};
 	};
 	
 	class Admin
@@ -275,7 +276,6 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class deviceMine {};
 		class addVehicle2Chain {};
-		class adacVInteractionMenu {};
 	};
 	
 	class Cop
