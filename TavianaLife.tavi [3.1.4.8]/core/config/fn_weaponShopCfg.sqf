@@ -146,6 +146,7 @@ case "army_weap_water":
 						["SUD_NVG", "JVN", 0 ],
 						["NVGoggles_OPFOR", "JVN Noir", 0 ],
 						["A3_GPNVG18b_BLK_F", nil, 0 ]
+					];
 				];
 			};
 		};
