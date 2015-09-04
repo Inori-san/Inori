@@ -62,6 +62,49 @@ switch (_var) do
 	case "life_inv_storagesmall": {(localize "STR_Item_StorageBS")};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
 	
+	//Nouveaux Objets by TavianaLife FR //
+	case "life_inv_charbonore": {(localize "STR_Item_CharbonOre")};
+	case "life_inv_carbonebrute": {(localize "STR_Item_CarboneBrute")};
+	case "life_inv_fontebrute": {(localise "STR_Item_FonteBrute")};
+	case "life_inv_paper": {(localise "STR_Item_Paper")};
+	case "life_inv_BoisBuche": {(localise "STR_Item_BoisBuche")};
+	case "life_inv_charbonlog": {(localise "STR_Item_CharbonLog")};
+	case "life_inv_IronUnrefined": {(localise "STR_Item_IronUnrefined")};
+	case "life_inv_IronRefined": {(localise "STR_Item_IronRefined")};
+	case "life_inv_PlaqueFonte": {(localise "STR_Item_PlaqueFonte")};
+	case "life_inv_EtainUnrefined": {(localise "STR_Item_EtainUnrefined")};
+	case "life_inv_EtainRefined": {(localise "STR_Item_EtainRefined")};
+	case "life_inv_CopperUnrefined": {(localise "STR_Item_CopperUnrefined")};
+	case "life_inv_CopperRefined": {(localise "STR_Item_CopperRefined")};
+	case "life_inv_AcierRefined": {(localise "STR_Item_AcierRefined")};
+	case "life_inv_BronzeRefined": {(localise "STR_Item_BronzeRefined")};
+	case "life_inv_Caviar": {(localise "STR_Item_Cavier")};
+	case "life_inv_CocaineUnprocessed": {(localise "STR_Item_CocaineUnprocessed")};
+	case "life_inv_CocaineProcessed": {(localise "STR_Item_CocaineProcessed")};
+	case "life_inv_Chanvre": {(localise "STR_Item_Chanvre")};
+	case "life_inv_Cannabis": {(localise "STR_Item_Cannabis")};
+	case "life_inv_VodkaCanna": {(localise "STR_Item_VodkaCanna")};
+	case "life_inv_Vodka": {(localise "STR_Item_Vodka")};
+	case "life_inv_Ble": {(localise "STR_Item_Ble")};
+	case "life_inv_Farine": {(localise "STR_Item_Farine")};
+	case "life_inv_Patate": {(localise "STR_Item_Patate")};
+	case "life_inv_Seigle": {(localise "STR_Item_Seigle")};
+	case "life_inv_betterave": {(localise "STR_Item_betterave")};
+	case "life_inv_MoutFerm": {(localise "STR_Item_MoutFerm")};
+	case "life_inv_distillat": {(localise "STR_Item_Distillat")};
+	case "life_inv_SaltUnrefined": {(localise "STR_Item_SaltUnrefined")};
+	case "life_inv_SaltRefined": {(localise "STR_Item_SaltRefined")};
+	case "life_inv_OilUnprocessed": {(localise "STR_Item_OilUnprocessed")};
+	case "life_inv_GazOil": {(localise "STR_Item_GazOil")};
+	case "life_inv_PvcRefined": {(localise "STR_Item_PvcRefined")};
+	case "life_inv_Caout": {(localise "STR_Item_Caout")};
+	case "life_inv_WaterGaz": {(localise "STR_Item_WaterGaz")};
+	case "life_inv_sugar": {(localise "STR_Item_Sugar")};
+	case "life_inv_colora": {(localise "STR_Item_Colora")};
+	case "life_inv_cafeine": {(localise "STR_Item_cafeine")};
+	case "life_inv_TaviCo": {(localise "STR_Item_TaviCo")};
+	case "life_inv_FakeMoney": {(localise "STR_Item_FakeMoney")};
+	
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
 	case "license_civ_air": {(localize "STR_License_Pilot")};
