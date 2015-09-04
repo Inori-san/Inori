@@ -56,5 +56,48 @@ switch (_item) do
 	case "defusekit": {2};
 	case "storagesmall": {5};
 	case "storagebig": {10};
+	
+	//NOUVEAUX ITEMS BY TAVIANALIFEFR//
+	case "charbonore": {3};
+	case "carbonbrute": {4};
+	case "fontebrute": {8};
+	case "paper": {1};
+	case "boisBuche": {4};
+	case "CharbonLog": {2};
+	case "IronUnrefined": {5};
+	case "IronRefined": {3};
+	case "PlaqueFonte": {4};
+	case "EtainUnrefined": {3};
+	case "EtainRefined": {4};
+	case "CopperUnrefined": {4};
+	case "CopperRefined": {3};
+	case "AcierRefined": {5};
+	case "BronzeRefined": {5};
+	case "Cavier": {2};
+	case "CocaineUnprocessed": {6};
+	case "CocaineProcessed": {4};
+	case "Chanvre": {4};
+	case "Cannabis": {3};
+	case "VodkaCanna": {3};
+	case "Vodka": {3};
+	case "Ble": {2};
+	case "Farine": {2};
+	case "patate": {1};
+	case "seigle": {1};
+	case "betterave": {1};
+	case "MoutFerm": {1};
+	case "distillat": {2};
+	case "SaltUnrefined": {3};
+	case "SaltRefined": {1};
+	case "OilUnprocessed": {6};
+	case "GazOil": {5};
+	case "PvcRefined": {5};
+	case "Caout": {4};
+	case "WaterGaz"! {1};
+	case "Sugar": {1};
+	case "Colora": {1};
+	case "Cafeine": {1};
+	case "TaviCo": {3};
+	case "FakeMoney": {1}
 	default {1};
 };
