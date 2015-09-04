@@ -2731,77 +2731,125 @@
 		</Key>
 	</Package>
 	<Package name="Life_Items">
-		<Key ID="STR_Item_charbonore">
+		<Key ID="STR_Item_CharbonOre">
 			<Original>Charbon brute</Original>
 		</Key>
-		<Key ID="STR_Item_carbonebrute">
+		<Key ID="STR_Item_CarboneBrute">
 			<Original>Carbone Brute</Original>
 		</Key>
-		<Key ID="STR_Item_fontebrute">
+		<Key ID="STR_Item_FonteBrute">
 			<Original>Fonte brute</Original>
 		</Key>
-		<Key ID="STR_Item_paper">
+		<Key ID="STR_Item_Paper">
 			<Original>Feuille de papier</Original>
 		</Key>
-		<Key ID="STR_Item_buchelog">
+		<Key ID="STR_Item_BoisBuche">
 			<Original>Bûche de bois</Original>
 		</Key>
-		<Key ID="STR_Item_charbonlog">
+		<Key ID="STR_Item_CharbonLog">
 			<Original>Charbon de bois</Original>
 		</Key>
-		<Key ID="STR_Item_plaqueFonte">
-			<Original>Plaque de fonte</Original>
+		<Key ID="STR_Item_IronUnrefined">
+			<Original>Minerais de fer</Original>
 		</Key>
-		<Key ID="STR_Item_etainUnrefined">
-			<Original>Minerais d'étain</Original>
+		<Key ID="STR_Item_IronRefined">
+			<Original>Lingot de fer</Original>
 		</Key>
-		<Key ID="STR_Item_etainRefined">
+		<Key ID="STR_Item_EtainUnrefined">
+			<Original>Minnerais d'étain</Original>
+		</Key>
+		<Key ID="STR_Item_EtainRefined">
 			<Original>Lingot d'étain</Original>
 		</Key>
-		<Key ID="STR_Item_acierRefined">
-			<Original>Barreau d'Acier</Original>
+		<Key ID="STR_Item_CopperUnrefined">
+			<Original>Minerais de cuivre</Original>
 		</Key>
-		<Key ID="STR_Item_bronzeRefined">
+		<Key ID="STR_Item_CopperRefined">
+			<Original>Lingot de cuivre</Original>
+		</Key>
+		<Key ID="STR_Item_AcierRefined">
+			<Original>Barreau d'acier</Original>
+		</Key>
+		<Key ID="STR_Item_BronzeRefined">
 			<Original>Barreau de Bronze</Original>
 		</Key>
 		<Key ID="STR_Item_Caviar">
 			<Original>Caviar</Original>
 		</Key>
+		<Key ID="STR_Item_CocaineUnprocessed">
+			<Original>Graine de coca</Original>
+		</Key>
+		<Key ID="STR_Item_CocaineProcessed">
+			<Original>Cocaine</Original>
+		</Key>
 		<Key ID="STR_Item_Chanvre">
 			<Original>Chanvre</Original>
+		</Key>
+		<Key ID="STR_Item_Cannabis">
+			<Original>Cannabis</Original>
 		</Key>
 		<Key ID="STR_Item_VodkaCanna">
 			<Original>Bouteille de Vodka Cannabis</Original>
 		</Key>
-		<Key ID="STR_Item_vodka">
+		<Key ID="STR_Item_Vodka">
 			<Original>Bouteille de Vodka</Original>
 		</Key>
-		<Key ID="STR_Item_ble">
+		<Key ID="STR_Item_Ble">
 			<Original>Blé</Original>
 		</Key>
-		<Key ID="STR_Item_farine">
-			<Original>Sac de farine</Original>
+		<Key ID="STR_Item_Farine">
+			<Original>Paquet de Farine</Original>
 		</Key>
-		<Key ID="STR_Item_fontebrute">
-			<Original>Fonte brute</Original>
+		<Key ID="STR_Item_Patate">
+			<Original>Pomme de terre</Original>
 		</Key>
-		<Key ID="STR_Item_fontebrute">
-			<Original>Fonte brute</Original>
+		<Key ID="STR_Item_Seigle">
+			<Original>Seigle</Original>
 		</Key>
-		<Key ID="STR_Item_fontebrute">
-			<Original>Fonte brute</Original>
+		<Key ID="STR_Item_betterave">
+			<Original>Betterave rouge</Original>
 		</Key>
-		<Key ID="STR_Item_fontebrute">
-			<Original>Fonte brute</Original>
+		<Key ID="STR_Item_MoutFerm">
+			<Original>Moût fermenté</Original>
 		</Key>
-		<Key ID="STR_Item_fontebrute">
-			<Original>Fonte brute</Original>
+		<Key ID="STR_Item_Distillat">
+			<Original>Distillat</Original>
 		</Key>
-		<Key ID="STR_Item_fontebrute">
-			<Original>Fonte brute</Original>
+		<Key ID="STR_Item_SaltUnrefined">
+			<Original>Sel de mer</Original>
 		</Key>
-		<Key ID="STR_Item_Cannabis">
-			<Original>Résine de cannabis</Original>
+		<Key ID="STR_Item_SaltRefined">
+			<Original>Sachet de grains de sel</Original>
+		</Key>
+		<Key ID="STR_Item_OilUnprocessed">
+			<Original>Baril de pétrole</Original>
+		</Key>
+		<Key ID="STR_Item_GazOil">
+			<Original>Bidon de Gazoil</Original>
+		</Key>
+		<Key ID="STR_Item_PvcRefined">
+			<Original>Tuyau de PVC</Original>
+		</Key>
+		<Key ID="STR_Item_Caout">
+			<Original>Morceau de caoutchou</Original>
+		</Key>
+		<Key ID="STR_Item_WaterGaz">
+			<Original>Eau Gazeuze</Original>
+		</Key>
+		<Key ID="STR_Item_Sugar">
+			<Original>Sucre</Original>
+		</Key>
+		<Key ID="STR_Item_Colora">
+			<Original>Colorant Alimentaire</Original>
+		</Key>
+		<Key ID="STR_Item_Cafeine">
+			<Original>Boite de cafeine</Original>
+		</Key>
+		<Key ID="STR_Item_TaviCo">
+			<Original>Bouteille de TaviaCola</Original>
+		</Key>
+		<Key ID="STR_Item_FakeMoney">
+			<Original>Faux Billets</Original>
 		</Key>
 		<Key ID="STR_Item_Apple">
 			<Original>Apple</Original>
