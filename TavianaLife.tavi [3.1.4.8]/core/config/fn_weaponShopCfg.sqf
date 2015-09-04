@@ -67,7 +67,7 @@ case "army_weap_air":
 						["RH_18Rnd_9x19_gsh","Chargeur GSH-18",0],
 						["rhs_mag_rgd5","Grenade RGD-5",0],
 						["RH_barska_rds","Red Dot Barska",0],
-						["RH_t1", "Red Dot T1",0],
+						["RH_t1","Red Dot T1",0],
 						["RH_shortdot","Lunette Schmidt",0],
 						["RH_peq15b_top",nil,0],
 						["RH_peq15b",nil,0],
