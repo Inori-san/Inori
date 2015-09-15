@@ -12,7 +12,7 @@ class Socket_Reciever
 		class updatePartial {};
 	};
 };
-
+/*
 class SpyGlass
 {
 	tag = "SPY";
@@ -28,7 +28,7 @@ class SpyGlass
 		class variableCheck{};
 		class initSpy {};
 	};
-};
+};*/
 
 class Life_Client_Core
 {
